@@ -1,0 +1,120 @@
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  /* position: sticky; */
+  top: 0;
+  z-index: 999;
+  transition: background 0.4s linear, height 0.4s ease-in;
+}
+
+.navbar .innerNav {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .innerNav .hide {
+  display: none;
+}
+
+.navbar .innerNav .box {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.navbar .innerNav .box img {
+  width: 70px;
+  /* height: 85px; */
+  margin: 1px 0;
+  cursor: pointer;
+  user-select: none;
+}
+
+.navbar .innerNav .box li {
+  list-style: none;
+  cursor: pointer;
+  color: var(--main-text-color);
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  margin: 0 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar .innerNav .box li .navLink {
+  text-decoration: none;
+  color: var(--main-text-color);
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.navbar .innerNav .box li:hover {
+  background: var(--main-second-backGradient-color);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.navbar .innerNav .box li .active {
+  background: var(--main-second-backGradient-color);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#basic-menu .active .MuiMenuItem-root {
+  background-color: rgb(243, 243, 243);
+  border-left: 4px solid #fcb81f;
+}
+
+.navbar .innerNav .box button {
+  width: 189px;
+  height: 41px;
+  display: flex;
+  color: var(--main-text-color);
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-style: none;
+  border-radius: 8px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  background-color: var(--main-background-color);
+  cursor: pointer;
+}
+
+.navbar .innerNav .box button:hover {
+  color: var(--main-textSecond-color);
+  background: var(--main-second-backGradient-color);
+}
+
+.navbar .innerNav .box button span {
+  text-align: center;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+@media only screen and (max-width: 1150px) {
+  .navbar .innerNav .box:not(:first-child) {
+    display: none;
+  }
+
+  .navbar .innerNav .hide {
+    display: flex;
+  }
+}

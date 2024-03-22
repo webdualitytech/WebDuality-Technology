@@ -1,0 +1,220 @@
+.startPage {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  letter-spacing: 0.5px;
+}
+
+.startPage .secondStartCont {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: var(--Black, #16205f);
+  font-family: Poppins;
+  font-style: normal;
+  margin: 30px 0 0 0;
+}
+
+.startPage .secondStartCont h4 {
+  width: 400px;
+  font-weight: 600;
+  margin: 15px 0;
+}
+
+.startPage .secondStartCont p {
+  width: 450px;
+  margin: 10px 0;
+}
+
+.startPage .secondStartCont .box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 50px;
+}
+
+.startPage .secondStartCont .box .inBox {
+  width: 30%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.startPage .secondStartCont .box .inBox img {
+  width: 60px;
+  height: 60px;
+  padding: 5px;
+  border-radius: 12px;
+  background: linear-gradient(90deg, #30bcc9 10.63%, #313968 100%);
+  margin-right: 15px;
+}
+
+.startPage .secondStartCont .box .inBox span {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.startPage .secondStartCont .box .inBox span p:nth-child(1) {
+  width: auto;
+  margin: 0 5px 5px 5px;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.startPage .secondStartCont .box .inBox span p:nth-child(2) {
+  width: auto;
+  margin: 0px;
+  margin: 10px 5px 5px 5px;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.startPage .secondStartCont .box .show:nth-child(2) {
+  transition-delay: 500ms;
+}
+
+.startPage .secondStartCont .box .show:nth-child(3) {
+  transition-delay: 1s;
+}
+
+@media only screen and (max-width: 1040px) {
+  .startPage .secondStartCont .hide {
+    display: none;
+  }
+
+  .startPage .c {
+    align-self: center;
+  }
+
+  .startPage .secondStartCont .box {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+  }
+
+  .startPage .secondStartCont .box .inBox {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 20px 0;
+  }
+
+  .slider-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .startPage .secondStartCont .box .inBox img {
+    align-self: center;
+    margin-bottom: 10px;
+  }
+
+  .startPage .secondStartCont .box .inBox span p {
+    align-self: center;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .startPage .secondStartCont h4,
+  .startPage .secondStartCont p {
+    width: 90%;
+  }
+}
+
+.startPage .thirdStartCont {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: var(--Black, #16205f);
+  font-family: Poppins;
+  font-style: normal;
+  margin: 30px 0;
+}
+
+.startPage .thirdStartCont h3 {
+  width: 400px;
+  font-weight: 600;
+  margin: 20px 0;
+}
+
+.startPage .thirdStartCont .box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.startPage .thirdStartCont .box h6 {
+  width: calc(100% / 3);
+  margin: 20px 0;
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 700px) {
+  .startPage .thirdStartCont .box h6 {
+    width: calc(100% / 2);
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .startPage .thirdStartCont h3 {
+    width: auto;
+  }
+  .startPage .thirdStartCont .box h6 {
+    width: 100%;
+    align-self: center;
+  }
+}
+
+.startPage .fourthStartCont {
+  width: 90%;
+  height: 400px;
+  background: url("./Assets/developersback.png") no-repeat;
+  background-size: cover;
+  border-radius: 0px 20px 0px 50px;
+  color: #fff;
+  font-family: Poppins;
+  font-style: normal;
+}
+
+.startPage .fourthStartCont p:nth-child(1) {
+  font-size: 3rem;
+  font-weight: 100;
+  margin: 20px;
+  margin-bottom: 10px;
+}
+
+.startPage .fourthStartCont p:nth-child(2) {
+  font-size: 16px;
+  font-weight: 550;
+  margin: 10px 20px;
+}
+
+/* hidden Animation */
+.hidden {
+  opacity: 0;
+  filter: blur(1px);
+  visibility: hidden;
+  transition: all linear 1s; /* Delay visibility change */
+}
+
+/* Show Animation */
+.show {
+  opacity: 1;
+  filter: blur(0);
+  visibility: visible;
+}

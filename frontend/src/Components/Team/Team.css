@@ -1,0 +1,104 @@
+.team {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.team span {
+  padding-bottom: 13px;
+  color: var(--Black, #16205f);
+  font-family: Poppins;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 58px; /* 126.087% */
+}
+
+.team p {
+  padding-bottom: 29px;
+  color: var(--Black, #16205f);
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.tabBox .custom-tabs span {
+  display: none; /* Remove the default underline style for the active tab */
+}
+
+.tabBox .custom-tab {
+  width: 100%;
+  height: 54px;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+    rgba(17, 17, 26, 0.05) 0px 8px 32px;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.tabBox .custom-tab:nth-child(1) {
+  border-radius: 8px 0px 0px 8px;
+}
+
+.mainTab .data {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.mainTab .dataBox {
+  margin: 0 10px;
+}
+
+.mainTab .dataBox span {
+  width: 100%;
+  height: 29px;
+  flex-shrink: 0;
+  color: var(--Black, #16205f);
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.mainTab .dataBox input[type="text"] {
+  display: flex;
+  width: 456.128px;
+  height: 60px;
+  padding: 10px 0px 10px 8px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  border: 1px solid #c5e0ff;
+  background: var(--White-Default, #fff);
+  margin-top: 10px;
+}
+
+.mainTab .dataBox input[type="text"]:focus {
+  outline: none;
+}
+
+@media only screen and (max-width: 1050px) {
+  .mainTab .data {
+    flex-direction: column;
+  }
+
+  .tabBox .custom-tab {
+    width: auto;
+  }
+
+  .mainTab .dataBox input[type="text"] {
+    width: 100%;
+  }
+}
