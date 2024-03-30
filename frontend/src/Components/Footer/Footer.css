@@ -228,8 +228,8 @@
   margin-right: 30px;
 }
 .footerBox .secondContFootBox .footBox img {
-  width: 80px;
-  height: 70px;
+  width: 60px;
+  /* height: 70px; */
   flex-shrink: 0;
   margin-bottom: 15px;
 }
@@ -263,7 +263,7 @@ a {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  margin: 10px 0;
+  margin: 8px 0;
 }
 
 @media only screen and (min-width: 1221px) {
@@ -289,7 +289,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 20px 0;
+  margin: 10px 0;
   color: var(--Black, #16205f);
   font-family: Poppins;
   font-size: 16px;
@@ -318,7 +318,7 @@ a {
 
 .footerBox .fourthContFootBox {
   width: 90%;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 
 .footerBox .fourthContFootBox p {
