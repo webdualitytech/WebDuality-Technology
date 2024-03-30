@@ -144,7 +144,7 @@
 @media only screen and (max-width: 1040px) {
   .homeContainer .homeFirstCont {
     width: 100%;
-    min-height: 80vh;
+    /* min-height: 80vh; */
     max-height: fit-content;
     justify-content: center;
   }
