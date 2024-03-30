@@ -1,0 +1,32 @@
+version: '3'
+
+services:
+  frontend:
+    image: webdualitytechnology/frontend1-image:01
+    ports:
+      - "3000:80"
+    networks:
+      - mern-network
+
+  backend:
+    image: webdualitytechnology/backend1-image:01
+    ports:
+      - "8000:8000"
+    environment:
+      - MONGODB_URI=mongodb+srv://webdualitytechnology:MwQiV3OBqSLUYm9P@webdualitytech.7vk6cri.mongodb.net/?retryWrites=true&w=majority&appName=webdualitytech
+      - PORT=8000
+    depends_on:
+      - mongo
+    networks:
+      - mern-network
+
+  mongo:
+    image: mongo:latest
+    ports:
+      - "27017:27017"
+    networks:
+      - mern-network
+
+networks:
+  mern-network:
+    driver: bridge
