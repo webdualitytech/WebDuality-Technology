@@ -46,8 +46,8 @@
 .footerBox .firstContFootBox .formBox .formDetails {
   width: 100%;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
   flex-wrap: wrap;
 }
 
@@ -76,7 +76,7 @@
 }
 
 .footerBox .firstContFootBox .formBox .formDetails .box input[type="text"] {
-  width: 100%;
+  width: 98%;
   display: flex;
   padding: 10px 0px 10px 8px;
   flex-direction: column;
@@ -176,11 +176,11 @@
   }
 
   .footerBox .firstContFootBox .formBox {
-    width: 90%;
+    width: 95%;
     background-color: #fff;
     position: static;
     border-radius: 0px;
-    margin-top: -150px;
+    margin-top: -100px;
   }
 
   .footerBox .firstContFootBox .formBox .formDetails {
@@ -204,7 +204,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 20px 0;
+  /* margin: 20px 0; */
   padding: 20px 0;
   border-top: 1px solid #c4c4c4;
 }
@@ -241,7 +241,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  margin: 10px 0;
+  /* margin: 5px 0; */
 }
 
 .footerBox .secondContFootBox .footBox:not(:first-child) p:nth-child(1) {
@@ -251,7 +251,9 @@
   font-style: normal;
   font-weight: 600;
   line-height: normal;
-  margin-top: 20px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  padding: 0;
 }
 
 .footerBox .secondContFootBox .footBox .footLink,
@@ -263,7 +265,7 @@ a {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  margin: 8px 0;
+  margin: 5px 0;
 }
 
 @media only screen and (min-width: 1221px) {
@@ -280,7 +282,7 @@ a {
 
   .footerBox .secondContFootBox .footBox {
     width: 90%;
-    margin: 20px 0;
+    margin: 3px 0;
   }
 }
 
@@ -289,7 +291,6 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* margin: 10px 0; */
   color: var(--Black, #16205f);
   font-family: Poppins;
   font-size: 16px;
@@ -318,7 +319,10 @@ a {
 
 .footerBox .fourthContFootBox {
   width: 90%;
-  margin-bottom: 25px;
+  margin: 10px 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .footerBox .fourthContFootBox p {

@@ -95,7 +95,7 @@ const Navbar = () => {
         style={{
           backgroundColor:
             scrollNav === 0 ? "transparent" : "var(--main-background-color)",
-          height: scrollNav === 0 ? "110px" : "95px",
+          height: scrollNav === 0 ? "90px" : "85px",
           borderBottom: scrollNav === 0 ? "" : "1px solid #e1e1e1",
         }}
       >

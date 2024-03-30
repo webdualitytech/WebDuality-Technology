@@ -5,6 +5,8 @@ import "./Home.css";
 
 import { NavLink } from "react-router-dom";
 
+import landingRight from "./Assets/landingRight.png";
+
 // Next Arrow
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 // Previous Arrow
@@ -201,7 +203,12 @@ const Home = () => {
     <>
       <div className="homeContainer">
         <div className="homeFirstCont">
-          <div className="sizeBox">
+          <div
+            className="sizeBox"
+            style={{
+              flexDirection: "row",
+            }}
+          >
             <div className="box">
               {/* Type Animation */}
               <h2>
@@ -252,6 +259,9 @@ const Home = () => {
                 }}
               />
             </button> */}
+            </div>
+            <div className="boxRight">
+              <img src={landingRight} alt="" draggable="false"/>
             </div>
           </div>
         </div>

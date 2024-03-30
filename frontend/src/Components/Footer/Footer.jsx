@@ -318,7 +318,9 @@ const Footer = () => {
                         fontSize: "12px",
                         fontWeight: "500",
                         color: "red",
-                        height: "20px",
+                        // height: "10px",
+                        margin:"0 0 0 5px",
+                        padding:"0"
                       }}
                     >
                       {e === "Email" ? alert.emailAlert : alert.phoneAlert}
@@ -527,7 +529,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="fourthContFootBox">
-          <p>&copy; 2022 webDuality</p>
+          <p>&copy; 2023 WebDuality Technology</p>
         </div>
       </div>
 
