@@ -132,11 +132,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 60px; 
+  margin-top: 60px;
   margin-bottom: 20px;
 }
 
-.homeContainer .homeFirstCont .boxRight img{
+.homeContainer .homeFirstCont .boxRight img {
   width: 90%;
   margin: 20px;
 }
@@ -150,7 +150,7 @@
   }
 
   .homeContainer .homeFirstCont .box {
-    margin-top: 100px;
+    margin-top: 60px;
   }
 
   .homeContainer .homeFirstCont .box p {
@@ -164,6 +164,10 @@
 }
 
 @media only screen and (max-width: 660px) {
+  .homeContainer {
+    background-size: cover;
+  }
+
   .homeContainer .homeFirstCont .boxRight {
     display: none;
   }
