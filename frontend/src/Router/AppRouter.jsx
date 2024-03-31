@@ -40,6 +40,7 @@ import Node from "../Pages/TechnologyDropPages/Node/Node";
 import ReactJS from "../Pages/TechnologyDropPages/ReactJS/ReactJS";
 import Typescript from "../Pages/TechnologyDropPages/Typescript/Typescript";
 import Vue from "../Pages/TechnologyDropPages/Vue/Vue";
+import NotFound from "../Pages/NotFound/NotFound";
 
 const AppRouter = () => {
   return (
@@ -85,6 +86,8 @@ const AppRouter = () => {
           <Route exact path="/mern" element={<MERN_MEAN />} />
           <Route exact path="/node" element={<Node />} />
           <Route exact path="/typescript" element={<Typescript />} />
+
+          <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />
       </Router>
