@@ -50,7 +50,7 @@ app.get("/*", (req, res) => {
 
 const router = require("./routes/routes");
 
-app.use("/v1", router);
+app.use("/api/v1", router);
 
 app.get("*", (req, res) => {
   return res.status(404).json({ "msg": "API not found" });

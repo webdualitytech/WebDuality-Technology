@@ -155,7 +155,7 @@ const Hire = (props) => {
     ) {
       // Post Request
       axios
-        .post(`${backendURL}/v1/apply`, hire)
+        .post(`${backendURL}/apply`, hire)
         .then((res) => {
           // Response
           setSnack({

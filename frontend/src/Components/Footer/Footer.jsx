@@ -169,7 +169,7 @@ const Footer = () => {
       };
       // Post Request
       axios
-        .post(`${backendURL}/v1/consultation`, data)
+        .post(`${backendURL}/consultation`, data)
         .then((res) => {
           // Response
           setSnack({
@@ -319,8 +319,8 @@ const Footer = () => {
                         fontWeight: "500",
                         color: "red",
                         // height: "10px",
-                        margin:"0 0 0 5px",
-                        padding:"0"
+                        margin: "0 0 0 5px",
+                        padding: "0",
                       }}
                     >
                       {e === "Email" ? alert.emailAlert : alert.phoneAlert}
