@@ -1,12 +1,19 @@
 import './App.css';
 // Import AppRouter
 import AppRouter from './Router/AppRouter';
+import LoaderContextProvider from './Contexts/LoaderContext/LoaderContextProvider'
+import { BrowserRouter as Router } from "react-router-dom";
 
 function App() {
   return (
     <>
-      {/* AppRouter Page */}
-      <AppRouter />
+      {/* Loader Context Provider Wrapper */}
+      <LoaderContextProvider>
+        {/* AppRouter Page */}
+        <Router>
+          <AppRouter />
+        </Router>
+      </LoaderContextProvider>
     </>
   );
 }

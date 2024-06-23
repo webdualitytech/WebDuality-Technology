@@ -1,0 +1,111 @@
+.navbar-top {
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: rgba(50, 50, 105, 0.096) 0px 2px 5px 0px,
+    rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+  position: sticky;
+  top: 0;
+}
+
+.navbar-top .left,
+.navbar-top .right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-top .right p{
+  text-align: center;
+  align-self: center;
+  margin: 0;
+  padding: 0;
+  font-weight: 550;
+}
+
+.navbar-top .left img {
+  width: 50px;
+  margin: 10px;
+  margin-left: 20px;
+}
+
+.navbar-top .right span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.navbar-top .right img {
+  width: 35px;
+  height: 35px;
+  margin: 10px;
+  border-radius: 50%;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px,
+    rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+}
+
+.navbar-sideBar {
+  width: 230px;
+  height: calc(100vh - 70px);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: #232f47;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-sideBar h4 {
+  margin: 15px 5px;
+}
+
+.navbar-sideBar p {
+ font-size: 1.2rem;
+ font-weight: 500;
+}
+
+.navbar-sideBar .navbar-box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.navbar-sideBar .navbar-box a,
+.navbar-sideBar .navbar-box span {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-decoration: none;
+  width: 80%;
+  padding: 5px 15px;
+  margin: 5px 0;
+  text-align: center;
+  font-size: 1rem;
+  color: #fff;
+  border-radius: 5px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.navbar-sideBar .navbar-box a:hover,
+.navbar-sideBar .navbar-box span:hover {
+  background-color: rgba(255, 255, 255, 0.192);
+}
+
+.navbar-sideBar .navbar-box a.active {
+  background-color: #fffffffa;
+  color: #232f47;
+  font-weight: 600;
+}

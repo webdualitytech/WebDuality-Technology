@@ -1,0 +1,81 @@
+.loginCont {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+}
+
+.loginCont form {
+  width: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px 0;
+  margin-left: 200px;
+}
+
+.loginCont form img {
+  width: 100px;
+  margin-top: 10px;
+}
+
+.loginCont form h2 {
+  font-size: 32px;
+  line-height: 42px;
+  text-align: center;
+}
+
+.loginCont label {
+  margin-top: 15px;
+  font-size: 1rem;
+  font-weight: 600;
+  align-self: flex-start;
+}
+
+.loginCont input {
+  display: block;
+  height: 50px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 3px;
+  padding: 0 10px;
+  margin-top: 8px;
+  font-size: 0.9rem;
+  font-weight: 300;
+  color: #1b1b1b;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  border: 1px solid #3a0f67d5;
+  font-weight: 550;
+}
+
+.loginCont form input::placeholder {
+  color: #353535;
+}
+
+.loginCont form input:focus{
+  outline: none;
+  border: 2px solid rgb(58,15,103);
+}
+
+.loginCont button {
+  margin-top: 30px;
+  background-color: #3a0f67d5;
+  color: #fff;
+  padding: 8px 20px;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+  border-style: none;
+}
+
+.loginCont .right{
+  width: 40%;
+  height: 100vh;
+  background: url('./Assets/loginback.png') no-repeat;
+  background-size: 100% 100vh;
+  background-position: center;
+}
